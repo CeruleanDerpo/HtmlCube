@@ -1,9 +1,25 @@
 body {
     margin: 0;
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inline-icon {
+    height: 1em;
+}
+
+.main-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     flex-direction: row;
     gap: 20%;
