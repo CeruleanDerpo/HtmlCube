@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Test Cube</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="qoobe" id="cube">
-        <div class="face-top">TOP</div>
-        <div class="face-bottom">BOTTOM</div>
-        <div class="face-front">FRONT</div>
-        <div class="face-back">BACK</div>
-        <div class="face-left">LEFT</div>
-        <div class="face-right">RIGHT</div>
+    <div class="main-container">
+        <div class="qoobe" id="cube">
+            <div class="face-top">TOP</div>
+            <div class="face-bottom">BOTTOM</div>
+            <div class="face-front">FRONT</div>
+            <div class="face-back">BACK</div>
+            <div class="face-left">LEFT</div>
+            <div class="face-right">RIGHT</div>
+        </div>
+    
+        <div class="cube-controls">
+            <div class="slider-and-label">
+                X Rotation
+                <input type="range" name="xRot" id="xRot" min="0" max="720">
+            </div>
+            <div class="slider-and-label">
+                Y Rotation
+                <input type="range" name="yRot" id="yRot" min="0" max="720">
+            </div>
+            <div class="slider-and-label">
+                Z Rotation
+                <input type="range" name="zRot" id="zRot" min="0" max="720">
+            </div>
+            <div class="slider-and-label">
+                Perspective
+                <input type="range" name="perspective" id="perspective" min="0" max="1000">
+            </div>
+            <label for="backfaceToggle">Backface visible: </label>
+            <input type="checkbox" name="backfaceToggle" class="backface-toggle" id="backfaceToggle">
+            <br>
+            <input type="button" value="Reset" id="resetBtn">
+        </div>
     </div>
 
-    <div class="cube-controls">
-        <div class="slider-and-label">
-            X Rotation
-            <input type="range" name="xRot" id="xRot" min="0" max="720">
-        </div>
-        <div class="slider-and-label">
-            Y Rotation
-            <input type="range" name="yRot" id="yRot" min="0" max="720">
-        </div>
-        <div class="slider-and-label">
-            Z Rotation
-            <input type="range" name="zRot" id="zRot" min="0" max="720">
-        </div>
-        <div class="slider-and-label">
-            Perspective
-            <input type="range" name="perspective" id="perspective" min="0" max="1000">
-        </div>
-        <label for="backfaceToggle">Backface visible: </label>
-        <input type="checkbox" name="backfaceToggle" class="backface-toggle" id="backfaceToggle">
-        <br>
-        <input type="button" value="Reset" id="resetBtn">
-    </div>
+    <footer><a href="https://github.com/CeruleanDerpo/HtmlCube" target="_blank">View Source on GitHub <span><img src="openurl.svg" class="inline-icon"></span></a></footer>
+
     <script src="rot.js"></script>
 </body>
 </html>
